@@ -22,7 +22,11 @@ class StartupCommand: SimpleCommand {
         let decoder = JSONDecoder()
         
         facade?.registerProxy(UserProxy(session: session, encoder: encoder, decoder: decoder))
-
+        facade?.registerProxy(RoleProxy(session: session, encoder: encoder, decoder: decoder))
+        
+        if let mediator = notification.body as? IMediator {
+            facade?.registerMediator(mediator)
+        }
     }
     
 }

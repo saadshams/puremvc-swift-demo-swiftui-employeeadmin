@@ -17,9 +17,9 @@ struct User: Identifiable, Hashable, Codable {
     var email: String?
     var password: String?
     var department: Department?
-    var roles: [Role]?
+    var roles: [Role]
     
-    init(id: Int, username: String? = nil, first: String? = nil, last: String? = nil, email: String? = nil, password: String? = nil, department: Department? = nil, roles: [Role]? = nil) {
+    init(id: Int, username: String? = nil, first: String? = nil, last: String? = nil, email: String? = nil, password: String? = nil, department: Department? = nil, roles: [Role] = []) {
         self.id = id
         self.username = username
         self.first = first

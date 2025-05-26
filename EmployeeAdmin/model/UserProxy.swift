@@ -24,10 +24,10 @@ class UserProxy: Proxy {
         self.session = session
         self.encoder = encoder
         self.decoder = decoder
-        super.init(name: UserProxy.NAME, data: nil)
+        super.init(name: UserProxy.NAME)
     }
     
-    func findAllUsers() -> AnyPublisher<[User], Error> {
+    func findAll() -> AnyPublisher<[User], Error> {
         guard let url = URL(string: "http://localhost/users") else {
             return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
         }
@@ -48,7 +48,7 @@ class UserProxy: Proxy {
             .eraseToAnyPublisher()
     }
     
-    func findUserById(_ id: Int) -> AnyPublisher<User, Error> {
+    func findById(_ id: Int) -> AnyPublisher<User, Error> {
         guard let url = URL(string: "http://localhost/users/\(id)") else {
             return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
         }
@@ -69,7 +69,7 @@ class UserProxy: Proxy {
             .eraseToAnyPublisher()
     }
     
-    func save(user: User) -> AnyPublisher<User, Error> {
+    func save(_ user: User) -> AnyPublisher<User, Error> {
         guard let url = URL(string: "http://localhost/users") else {
             return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
         }
@@ -100,7 +100,7 @@ class UserProxy: Proxy {
             .eraseToAnyPublisher()
     }
     
-    func update(user: User) -> AnyPublisher<User, Error> {
+    func update(_ user: User) -> AnyPublisher<User, Error> {
         guard let url = URL(string: "http://localhost/users/\(user.id)") else {
             return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
         }

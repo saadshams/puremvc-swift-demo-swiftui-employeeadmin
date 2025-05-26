@@ -25,7 +25,7 @@ class ApplicationFacade: Facade {
         Facade.getInstance(key) { k in ApplicationFacade(key: k)} as? ApplicationFacade
     }
     
-    func startup() {
-        sendNotification(ApplicationFacade.STARTUP)
+    func startup(mediator: IMediator) {
+        sendNotification(ApplicationFacade.STARTUP, body: mediator)
     }
 }

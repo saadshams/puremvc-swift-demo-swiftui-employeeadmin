@@ -9,7 +9,7 @@
 
 import Foundation
 
-class Exception: Error, Codable {
+struct Exception: Error, Codable {
     
     let code: Int
     let message: String

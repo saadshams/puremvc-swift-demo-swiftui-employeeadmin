@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A80249D02DE0DA8500D1BF1E /* PureMVC in Frameworks */ = {isa = PBXBuildFile; productRef = A80249CF2DE0DA8500D1BF1E /* PureMVC */; };
+		A8024A1D2DE1A07800D1BF1E /* PureMVC in Frameworks */ = {isa = PBXBuildFile; productRef = A8024A1C2DE1A07800D1BF1E /* PureMVC */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A80249D02DE0DA8500D1BF1E /* PureMVC in Frameworks */,
+				A8024A1D2DE1A07800D1BF1E /* PureMVC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +117,7 @@
 			);
 			name = EmployeeAdmin;
 			packageProductDependencies = (
-				A80249CF2DE0DA8500D1BF1E /* PureMVC */,
+				A8024A1C2DE1A07800D1BF1E /* PureMVC */,
 			);
 			productName = EmployeeAdmin;
 			productReference = A80249A12DE0D9E000D1BF1E /* EmployeeAdmin.app */;
@@ -202,7 +202,7 @@
 			mainGroup = A80249982DE0D9E000D1BF1E;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				A80249CE2DE0DA8500D1BF1E /* XCLocalSwiftPackageReference "../../puremvc-swift-multicore-framework" */,
+				A8024A1B2DE1A07800D1BF1E /* XCLocalSwiftPackageReference "../puremvc-swift-multicore-framework" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A80249A22DE0D9E000D1BF1E /* Products */;
@@ -561,14 +561,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		A80249CE2DE0DA8500D1BF1E /* XCLocalSwiftPackageReference "../../puremvc-swift-multicore-framework" */ = {
+		A8024A1B2DE1A07800D1BF1E /* XCLocalSwiftPackageReference "../puremvc-swift-multicore-framework" */ = {
 			isa = XCLocalSwiftPackageReference;
-			relativePath = "../../puremvc-swift-multicore-framework";
+			relativePath = "../puremvc-swift-multicore-framework";
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A80249CF2DE0DA8500D1BF1E /* PureMVC */ = {
+		A8024A1C2DE1A07800D1BF1E /* PureMVC */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PureMVC;
 		};
